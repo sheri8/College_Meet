@@ -1,12 +1,12 @@
+
 import 'package:college_meet/Screens/onboardingscreens/gender.dart';
 import 'package:college_meet/Screens/onboardingscreens/setname.dart';
 import 'package:college_meet/Screens/onboardingscreens/signupbirthday.dart';
-import 'package:college_meet/Screens/onboardingscreens/verifyphone.dart';
+import 'package:college_meet/Screens/authphone/verifyphone.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
-import 'continuephone.dart';
-import 'sexuality.dart';
+import '../authphone/continuephone.dart';
 
 class OnBoardingScreens extends StatefulWidget {
   @override
@@ -17,8 +17,7 @@ int currentPage = 0;
 
 final _controller = PageController(initialPage: 0);
 List<Widget> _pages = [
-  Column(children: [Expanded(child: ContinuePhone())]),
-  Column(children: [Expanded(child: VerifyPhone())]),
+ 
   Column(children: [
     Expanded(child: SetName()),
   ]),
@@ -36,13 +35,7 @@ List<Widget> _pages = [
       ),
     ],
   ),
-  Column(
-    children: [
-      Expanded(
-        child: Sexuality(),
-      ),
-    ],
-  ),
+ 
 ];
 
 class _OnBoardingScreensState extends State<OnBoardingScreens> {
@@ -69,9 +62,24 @@ class _OnBoardingScreensState extends State<OnBoardingScreens> {
             position: currentPage.toDouble(),
             decorator: DotsDecorator(
               color: Color(0xffE0E0E0), // Inactive color
-              activeColor: Color(0xffC70606),
+              activeColor: Color(0xfffc6179),
             ),
           ),
+
+        TextButton(onPressed: (){}, child: Text('Skip',
+        style: TextStyle(color: Color(0xfffc6179)),)),
+        SizedBox(height: 10),
+        Container(
+          margin: EdgeInsets.only(bottom: 20),
+          child: ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (builder) => ContinuePhone()));
+          }, child: Text('Next'),
+          style: ElevatedButton.styleFrom(
+            shape: StadiumBorder(),
+            primary: Color(0xfffc6179),
+            fixedSize: Size(330, 50)
+          )),
+        )
         ],
       ),
     );

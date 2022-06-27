@@ -28,14 +28,10 @@ class _VerifyPhoneState extends State<VerifyPhone> {
             },
             icon: Icon(
               Icons.arrow_back_ios,
-              color: PrimaryColor,
+              color: Color(0xfffc6179),
             )),
-        title: Image.asset(
-          'assets/Logo.png',
-          width: 105,
-          height: 18,
-        ),
-        centerTitle: true,
+        title: Text("Verification",style: TextStyle(color: Colors.black),),
+        
       ),
       body: SingleChildScrollView(
         child: SizedBox(
@@ -98,49 +94,19 @@ class _VerifyPhoneState extends State<VerifyPhone> {
                   ),
                 ),
                 SizedBox(height: 15),
-                Center(
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Resend',
-                      style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(8),
-                      ),
-                      primary: Colors.black,
-                      textStyle: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ),
+               
                 SizedBox(height: 45),
-                Container(
-                  width: double.infinity,
-                  height: 56,
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => SetName()));
-                      },
-                      style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(8),
-                        ),
-                        primary: PrimaryColor,
-                        textStyle: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      child: Text(
-                        'VERIFY',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600),
-                      )),
-                ),
+                   Container(
+          margin: EdgeInsets.only(bottom: 20),
+          child: ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (builder) => ContinuePhone()));
+          }, child: Text('Next'),
+          style: ElevatedButton.styleFrom(
+            shape: StadiumBorder(),
+            primary: Color(0xfffc6179),
+            fixedSize: Size(330, 50)
+          )),
+        ),
                 Spacer()
               ],
             ),

@@ -16,7 +16,7 @@ class _SplashState extends State<Splash> {
     // TODO: implement initState
     super.initState();
     Timer(
-        Duration(seconds: 20),
+        Duration(seconds:3),
         () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => Welcome())));
   }
@@ -30,17 +30,9 @@ class _SplashState extends State<Splash> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 40),
-            Text(
-              'College Meet',
-              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 25),
-            ),
-            SizedBox(height: 30),
-            Image.asset('asset/splash.png'),
-            SizedBox(
-              height: 40,
-            ),
-            Image.asset('asset/Splash/splash_loading.PNG'),
+           
+            Image.asset('asset/splash.png',fit: BoxFit.cover,),
+           
           ],
         ),
       ),
