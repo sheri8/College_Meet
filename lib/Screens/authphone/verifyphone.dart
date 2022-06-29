@@ -1,3 +1,4 @@
+import 'package:college_meet/Screens/authphone/selectinterest.dart';
 import 'package:college_meet/Screens/onboardingscreens/setname.dart';
 import 'package:flutter/material.dart';
 
@@ -30,8 +31,10 @@ class _VerifyPhoneState extends State<VerifyPhone> {
               Icons.arrow_back_ios,
               color: Color(0xfffc6179),
             )),
-        title: Text("Verification",style: TextStyle(color: Colors.black),),
-        
+        title: Text(
+          "Verification",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: SingleChildScrollView(
         child: SizedBox(
@@ -93,20 +96,22 @@ class _VerifyPhoneState extends State<VerifyPhone> {
                     style: TextStyle(fontSize: 12, color: Color(0xff8F8F8F)),
                   ),
                 ),
-                SizedBox(height: 15),
-               
-                SizedBox(height: 45),
-                   Container(
-          margin: EdgeInsets.only(bottom: 20),
-          child: ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (builder) => ContinuePhone()));
-          }, child: Text('Next'),
-          style: ElevatedButton.styleFrom(
-            shape: StadiumBorder(),
-            primary: Color(0xfffc6179),
-            fixedSize: Size(330, 50)
-          )),
-        ),
+                SizedBox(height: 60),
+                Container(
+                  margin: EdgeInsets.only(bottom: 20),
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (builder) => SelectInterest()));
+                      },
+                      child: Text('Next'),
+                      style: ElevatedButton.styleFrom(
+                          shape: StadiumBorder(),
+                          primary: Color(0xfffc6179),
+                          fixedSize: Size(330, 50))),
+                ),
                 Spacer()
               ],
             ),
