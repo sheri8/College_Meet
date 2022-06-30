@@ -4,7 +4,8 @@ import 'package:college_meet/BottomNavigatonBar/Screens/fiber_dvr.dart';
 import 'package:college_meet/BottomNavigatonBar/Screens/heart.dart';
 import 'package:college_meet/BottomNavigatonBar/Screens/home.dart';
 import 'package:college_meet/BottomNavigatonBar/Screens/message.dart';
-import 'package:college_meet/BottomNavigatonBar/Screens/people.dart';
+import 'package:college_meet/BottomNavigatonBar/Screens/profile.dart';
+
 import 'package:flutter/material.dart';
 // import 'package:instagram/screens/add_post_screen.dart';
 // import 'package:instagram/screens/feed_screen.dart';
@@ -18,7 +19,7 @@ List<Widget> homeScreenItems = [
   Fiber_dev(),
   Heart(),
   Message(),
-  People()
+  Profile()
   //  Random(),
   //  ChatPage(),
   //  Profile(),
