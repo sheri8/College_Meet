@@ -44,7 +44,7 @@ class Best_Photo extends StatelessWidget {
               children: [
                 Container(
                   height: 220,
-                  width: 160,
+                  width: 150,
                   decoration: BoxDecoration(
                       // shape: BoxShape.rectangle,
                       image: DecorationImage(
@@ -67,7 +67,7 @@ class Best_Photo extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(12)),
                     child: Container(
                         height: 220,
-                        width: 160,
+                        width: 150,
                         color: Colors.pink.shade200,
                         child: IconButton(
                             onPressed: () {},
@@ -94,7 +94,7 @@ class Best_Photo extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(12)),
                     child: Container(
                         height: 220,
-                        width: 160,
+                        width: 150,
                         color: Colors.pink.shade200,
                         child: IconButton(
                             onPressed: () {},
@@ -113,7 +113,7 @@ class Best_Photo extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(12)),
                     child: Container(
                         height: 220,
-                        width: 160,
+                        width: 150,
                         color: Colors.pink.shade200,
                         child: IconButton(
                             onPressed: () {},

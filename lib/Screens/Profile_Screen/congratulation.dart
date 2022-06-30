@@ -1,3 +1,4 @@
+import 'package:college_meet/BottomNavigatonBar/Screens/mainscreen.dart';
 import 'package:flutter/material.dart';
 
 class Congratulation extends StatelessWidget {
@@ -31,7 +32,7 @@ class Congratulation extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 14)),
               SizedBox(
-                height: 250,
+                height: 160,
               ),
               // Spacer(),
               SizedBox(
@@ -42,7 +43,7 @@ class Congratulation extends StatelessWidget {
                       // Navigator.push(
                       //     context,
                       //     MaterialPageRoute(
-                      //         builder: (builder) => Congratulation()));
+                      //         builder: (builder) => MainScreen()));
                     },
                     child: Text('Go to Home Page'),
                     style: ElevatedButton.styleFrom(

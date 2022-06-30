@@ -28,7 +28,7 @@ class _GenderState extends State<Gender> {
            Center(
                child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
-                child:  Image.asset('asset/female.png',)),
+                child:  Image.asset('asset/couple.png',)),
              ),
            SizedBox(height: 61),
                

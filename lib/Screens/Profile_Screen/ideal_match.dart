@@ -41,7 +41,7 @@ class Ideal_Match extends StatelessWidget {
               children: [
                 Container(
                   height: 160,
-                  width: 160,
+                  width: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: Colors.grey, width: 2),
@@ -71,9 +71,10 @@ class Ideal_Match extends StatelessWidget {
                         )
                       ]),
                 ),
+                SizedBox(width: 5,),
                 Container(
                   height: 160,
-                  width: 160,
+                  width: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: Colors.redAccent, width: 2),
@@ -111,7 +112,7 @@ class Ideal_Match extends StatelessWidget {
               children: [
                 Container(
                   height: 160,
-                  width: 160,
+                  width: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: Colors.grey, width: 2),
@@ -141,9 +142,10 @@ class Ideal_Match extends StatelessWidget {
                         )
                       ]),
                 ),
+                SizedBox(width: 5,),
                 Container(
                   height: 160,
-                  width: 160,
+                  width: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: Colors.redAccent, width: 2),

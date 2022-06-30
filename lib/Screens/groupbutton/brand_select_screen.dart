@@ -68,10 +68,9 @@ class _BrandSelectScreenState extends State<BrandSelectScreen> {
               selectedColor: Color.fromARGB(255, 255, 105, 122)),
         ),
         SizedBox(
-          height: 200,
+          height: 50,
         ),
         Container(
-          margin: EdgeInsets.only(bottom: 20),
           child: ElevatedButton(
               onPressed: () {
                 Navigator.push(

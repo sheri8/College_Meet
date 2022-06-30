@@ -26,7 +26,7 @@ class SignUpBirthday extends StatelessWidget {
            Center(
                child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
-                child:  Image.asset('asset/boy.jpg',width: 270)),
+                child:  Image.asset('asset/kiss.png')),
              ),
                
              

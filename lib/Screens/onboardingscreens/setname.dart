@@ -42,7 +42,7 @@ class _SetNameState extends State<SetName> {
              Center(
                child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
-                child:  Image.asset('asset/female.png')),
+                child:  Image.asset('asset/dating.png')),
              ),
            SizedBox(height: 61),
          Center(

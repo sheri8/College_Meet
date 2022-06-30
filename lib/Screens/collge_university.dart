@@ -26,23 +26,20 @@ class College_University extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 250),
-              Center(
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      border: Border.all(
-                        color: Colors.grey,
-                        width: 1,
-                      )),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 18, horizontal: 32),
-                    child: Text('Select Colege/University'),
-                  ),
-                ),
-              ),
-              SizedBox(height: 300),
+              Spacer(),
+              TextFormField(
+  decoration: const InputDecoration(
+    labelText: 'Enter University or College Name',
+  ),
+  onSaved: (String? value) {
+    // This optional block of code can be used to run
+    // code when the user saves the form.
+  },
+  validator: (String? value) {
+    return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
+  },
+),
+              Spacer(),
               SizedBox(
                 height: 50,
                 width: double.infinity,
@@ -60,7 +57,7 @@ class College_University extends StatelessWidget {
                       // fixedSize: Size(300, 50)
                     )),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               Text(
                 'My College/University is not listed above',
                 style: TextStyle(
