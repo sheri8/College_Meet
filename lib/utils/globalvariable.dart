@@ -1,5 +1,10 @@
 // import 'package:firebase_auth/firebase_auth.dart';
 
+import 'package:college_meet/BottomNavigatonBar/Screens/fiber_dvr.dart';
+import 'package:college_meet/BottomNavigatonBar/Screens/heart.dart';
+import 'package:college_meet/BottomNavigatonBar/Screens/home.dart';
+import 'package:college_meet/BottomNavigatonBar/Screens/message.dart';
+import 'package:college_meet/BottomNavigatonBar/Screens/people.dart';
 import 'package:flutter/material.dart';
 // import 'package:instagram/screens/add_post_screen.dart';
 // import 'package:instagram/screens/feed_screen.dart';
@@ -9,7 +14,11 @@ import 'package:flutter/material.dart';
 const webScreenSize = 600;
 
 List<Widget> homeScreenItems = [
-  //  Feed(),
+  Home_Screen(),
+  Fiber_dev(),
+  Heart(),
+  Message(),
+  People()
   //  Random(),
   //  ChatPage(),
   //  Profile(),
