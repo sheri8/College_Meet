@@ -1,3 +1,4 @@
+import 'package:college_meet/BottomNavigatonBar/bottomnavigation.dart';
 import 'package:flutter/material.dart';
 
 class Congratulation extends StatelessWidget {
@@ -39,10 +40,10 @@ class Congratulation extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (builder) => Congratulation()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (builder) => MobileScreenLayout()));
                     },
                     child: Text('Go to Home Page'),
                     style: ElevatedButton.styleFrom(

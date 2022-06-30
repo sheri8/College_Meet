@@ -146,7 +146,7 @@ class Ideal_Match extends StatelessWidget {
                   width: 160,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.redAccent, width: 2),
+                    border: Border.all(color: Colors.grey, width: 2),
                   ),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
