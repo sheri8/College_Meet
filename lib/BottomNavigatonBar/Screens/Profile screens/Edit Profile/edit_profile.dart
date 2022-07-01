@@ -1,5 +1,6 @@
-import 'package:college_meet/BottomNavigatonBar/Screens/Edit%20Profile/signuppage.dart';
 import 'package:flutter/material.dart';
+
+import 'signuppage.dart';
 
 class Edit_Profile extends StatelessWidget {
   const Edit_Profile({Key? key}) : super(key: key);

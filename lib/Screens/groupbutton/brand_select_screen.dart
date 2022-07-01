@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:college_meet/Screens/collge_university.dart';
+import 'package:college_meet/Screens/Profile_Screen/myemail.dart';
 import 'package:flutter/material.dart';
 import 'package:group_button/group_button.dart';
 
@@ -76,7 +76,7 @@ class _BrandSelectScreenState extends State<BrandSelectScreen> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (builder) => College_University()));
+                        builder: (builder) => Email()));
               },
               child: Text('Next'),
               style: ElevatedButton.styleFrom(

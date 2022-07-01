@@ -1,6 +1,6 @@
+import 'package:college_meet/Screens/splash.dart';
 import 'package:flutter/material.dart';
 
-import 'BottomNavigatonBar/Screens/Profile screens/Invite Friends/invite_friends.dart';
 
 // import 'BottomNavigatonBar/Screens/profile.dart';
 
@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Invite_Friends()
-        // Splash(),
+    return MaterialApp(home: 
+        Splash(),
         );
   }
 }

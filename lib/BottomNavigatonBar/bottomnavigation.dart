@@ -107,7 +107,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                   color: _page == 2 ? Colors.redAccent : Colors.pink[50]),
-              child: Icon(Icons.heart_broken,
+              child: Icon(Icons.favorite,
                   size: 22, color: _page == 2 ? Colors.white : Colors.redAccent
                   // if(_page == 0){
                   // color: Colors.pink[50],}

@@ -8,49 +8,87 @@ class Home_Screen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        toolbarHeight: 50,
         elevation: 0,
         backgroundColor: Colors.white,
-        leading: Container(
-          margin: EdgeInsets.all(8),
-          // padding: EdgeInsets.all(20),
-          // margin: EdgeInsets.all(left: 10),
-          width: 50,
-          height: 50,
-          decoration: BoxDecoration(
-            color: Colors.pink[300],
-            borderRadius: BorderRadius.all(Radius.circular(40)),
+      
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Text(
+                'Hello',
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.w700, fontSize: 13),
+              ),
+              Text(
+                'Alex',
+                style: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.w600, fontSize: 12),
+              ),
+            ],
           ),
-          child: Icon(Icons.warning_amber),
-        ),
-        title: Text(
-          'Match',
-          style: TextStyle(
-              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22),
         ),
         actions: [
-          Container(
-            margin: EdgeInsets.only(right: 10),
-            height: 50,
-            width: 50,
-            decoration: BoxDecoration(
-                color: Colors.pinkAccent[100],
-                borderRadius: BorderRadius.all(Radius.circular(15))),
-            child: IconButton(onPressed: () {}, icon: Icon(Icons.filter_1)),
-          )
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage('asset/girl-.jpg'),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Icon( Icons.more_vert_sharp,color: Colors.pinkAccent,),
+        )
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            children: [
-              Text(
-                'All Match',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20),
-              )
-            ],
+          
+          Container(
+            margin: EdgeInsets.only(left: 30,right: 30),
+            child: ClipRRect(
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(40),topRight: Radius.circular(40)),
+              child: Image.asset('asset/girl-.jpg',width: 300,)),
+          ),
+SizedBox(height: 20,),
+          Container(
+                        margin: EdgeInsets.only(left: 20,right: 20,top: 10),
+
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  // margin: EdgeInsets.symmetric(horizontal: 10),
+                  width: 45,
+                  height: 45,
+                  decoration: BoxDecoration(
+                    color: Colors.pink[100],
+                    borderRadius: BorderRadius.all(Radius.circular(30)),
+                  ),
+                  child: Icon(
+                    Icons.clear,
+                    color: Colors.redAccent,
+                    // size: 15,
+                  )),
+                  SizedBox(width: 50,),
+                  Container(
+                  // margin: EdgeInsets.symmetric(horizontal: 10),
+                  width: 45,
+                  height: 45,
+                  decoration: BoxDecoration(
+                    color: Colors.purple,
+                    borderRadius: BorderRadius.all(Radius.circular(30)),
+                  ),
+                  child: Icon(
+                    Icons.favorite,
+                    color: Colors.white,
+                    // size: 15,
+                  )),
+              ],
+            ),
           )
         ],
       ),

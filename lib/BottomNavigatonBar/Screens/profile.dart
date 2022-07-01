@@ -12,22 +12,25 @@ class Profile extends StatelessWidget {
   zisttile(String text, IconData icon, VoidCallback function) {
     return ListTile(
         leading: Container(
-          width: 50,
-          height: 50,
+          width: 40,
+          height: 40,
           decoration: BoxDecoration(
               color: Colors.pink[100],
               borderRadius: BorderRadius.all(
-                Radius.circular(40),
+                Radius.circular(30),
               )),
-          child: Icon(
-            icon,
-            color: Colors.redAccent,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Icon(
+              icon,
+              color: Colors.redAccent,
+            ),
           ),
         ),
         title: Text(
           text,
           style: TextStyle(
-              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+              color: Colors.black, fontWeight: FontWeight.w500, fontSize: 16),
         ),
         trailing: IconButton(
           onPressed: function,
