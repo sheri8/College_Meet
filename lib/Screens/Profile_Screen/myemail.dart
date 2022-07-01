@@ -1,3 +1,4 @@
+import 'package:college_meet/Screens/Profile_Screen/sexual_orientation.dart';
 import 'package:college_meet/Screens/collge_university.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -35,17 +36,19 @@ class _EmailState extends State<Email> {
               ),
               Spacer(),
               TextFormField(
-  decoration: const InputDecoration(
-    labelText: 'Enter Email Address',
-  ),
-  onSaved: (String? value) {
-    // This optional block of code can be used to run
-    // code when the user saves the form.
-  },
-  validator: (String? value) {
-    return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
-  },
-),
+                decoration: const InputDecoration(
+                  labelText: 'Enter Email Address',
+                ),
+                onSaved: (String? value) {
+                  // This optional block of code can be used to run
+                  // code when the user saves the form.
+                },
+                validator: (String? value) {
+                  return (value != null && value.contains('@'))
+                      ? 'Do not use the @ char.'
+                      : null;
+                },
+              ),
               Spacer(),
               SizedBox(
                 height: 50,
@@ -55,7 +58,7 @@ class _EmailState extends State<Email> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (builder) => College_University()));
+                              builder: (builder) => Sexual_Orientation()));
                     },
                     child: Text('Continue'),
                     style: ElevatedButton.styleFrom(

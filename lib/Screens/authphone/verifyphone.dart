@@ -1,4 +1,5 @@
-import 'package:college_meet/Screens/authphone/selectinterest.dart';
+import 'package:college_meet/Screens/Profile_Screen/myemail.dart';
+// import 'package:college_meet/Screens/authphone/selectinterest.dart';
 import 'package:college_meet/Screens/onboardingscreens/setname.dart';
 import 'package:flutter/material.dart';
 
@@ -101,10 +102,8 @@ class _VerifyPhoneState extends State<VerifyPhone> {
                   margin: EdgeInsets.only(bottom: 20),
                   child: ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (builder) => SelectInterest()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (builder) => Email()));
                       },
                       child: Text('Next'),
                       style: ElevatedButton.styleFrom(

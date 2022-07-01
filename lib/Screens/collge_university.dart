@@ -1,4 +1,5 @@
 import 'package:college_meet/Screens/Profile_Screen/best_photo.dart';
+import 'package:college_meet/Screens/Profile_Screen/enable_location.dart';
 import 'package:flutter/material.dart';
 
 class College_University extends StatelessWidget {
@@ -8,37 +9,45 @@ class College_University extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.grey,
+              )),
+        ),
         body: Padding(
-          padding: EdgeInsets.all(25),
+          padding: EdgeInsets.all(30),
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
-                height: 30,
-              ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: Text(
-                  'My College \nUniversity is',
-                  style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
+              Text(
+                'My College \nUniversity is',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 45,
                 ),
               ),
               Spacer(),
               TextFormField(
-  decoration: const InputDecoration(
-    labelText: 'Enter University or College Name',
-  ),
-  onSaved: (String? value) {
-    // This optional block of code can be used to run
-    // code when the user saves the form.
-  },
-  validator: (String? value) {
-    return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
-  },
-),
+                decoration: const InputDecoration(
+                  labelText: 'Enter University or College Name',
+                ),
+                onSaved: (String? value) {
+                  // This optional block of code can be used to run
+                  // code when the user saves the form.
+                },
+                validator: (String? value) {
+                  return (value != null && value.contains('@'))
+                      ? 'Do not use the @ char.'
+                      : null;
+                },
+              ),
               Spacer(),
               SizedBox(
                 height: 50,
@@ -48,7 +57,7 @@ class College_University extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (builder) => Best_Photo()));
+                              builder: (builder) => Enable_location()));
                     },
                     child: Text('Continue'),
                     style: ElevatedButton.styleFrom(

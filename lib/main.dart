@@ -1,6 +1,6 @@
+import 'package:college_meet/BottomNavigatonBar/Screens/home.dart';
 import 'package:college_meet/Screens/splash.dart';
 import 'package:flutter/material.dart';
-
 
 // import 'BottomNavigatonBar/Screens/profile.dart';
 
@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: 
-        Splash(),
-        );
+    return MaterialApp(
+      home: Splash(),
+      // Home_Screen()
+    );
   }
 }
