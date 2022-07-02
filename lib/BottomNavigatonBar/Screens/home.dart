@@ -1,3 +1,5 @@
+import 'package:college_meet/widgets/backgroundwiget.dart';
+import 'package:college_meet/widgets/cardsstackwidget.dart';
 import 'package:flutter/material.dart';
 
 class Home_Screen extends StatefulWidget {
@@ -47,110 +49,10 @@ class _Home_ScreenState extends State<Home_Screen> {
           ),
         ],
       ),
-      body: Column(
-        // crossAxisAlignment: CrossAxisAlignment.center,
-        // mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // ClipRRect(
-          //     borderRadius: BorderRadius.all(Radius.circular(30)),
-          //     child: Image.asset(
-          //       'asset/female.png',
-          //       // height: 200,
-          //       width: 350,
-          //     )),
-          // ClipRRect(
-          //   borderRadius: BorderRadius.circular(28),
-          //   child: Image.asset(
-          //     'asset/kuri.jpg',
-          //     width: 400,
-          //     height: 500,
-          //     // height: MediaQuery.of(context).size.height * 0.7,
-          //     // width: 1000,
-          //   ),
-          // ),
-          Stack(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(18.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: Container(
-                    child: Image.asset(
-                      'asset/girl-.jpg',
-                      fit: BoxFit.cover,
-                      height: 300,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                bottom: 20,
-                left: 10,
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Column(
-                    children: [
-                      Text(
-                        'Jenifer, 21',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'Singer',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      ),
-                    ],
-                  ),
-                ),
-              )
-            ],
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                    // margin: EdgeInsets.symmetric(horizontal: 10),
-                    width: 45,
-                    height: 45,
-                    decoration: BoxDecoration(
-                      color: Colors.pink[100],
-                      borderRadius: BorderRadius.all(Radius.circular(30)),
-                    ),
-                    child: Icon(
-                      Icons.clear,
-                      color: Colors.redAccent,
-                      // size: 15,
-                    )),
-                SizedBox(
-                  width: 50,
-                ),
-                Container(
-                    // margin: EdgeInsets.symmetric(horizontal: 10),
-                    width: 45,
-                    height: 45,
-                    decoration: BoxDecoration(
-                      color: Colors.purple,
-                      borderRadius: BorderRadius.all(Radius.circular(30)),
-                    ),
-                    child: Icon(
-                      Icons.favorite,
-                      color: Colors.white,
-                      // size: 15,
-                    )),
-              ],
-            ),
-          )
-        ],
-      ),
+      body:Column(children: [
+          // BackgroudCurveWidget(),
+            CardsStackWidget(),
+      ],)
     );
   }
 }

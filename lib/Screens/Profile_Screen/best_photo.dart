@@ -81,7 +81,7 @@ class Best_Photo extends StatelessWidget {
                   },
                   child: Text(
                     'All Set lets start now...',
-                    style: TextStyle(fontSize: 22),
+                    style: TextStyle(fontSize: 14),
                   ),
                   style: ElevatedButton.styleFrom(
                     shape: StadiumBorder(),
